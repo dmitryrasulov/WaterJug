@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A4B5FDC727D791A500E4C06B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDC627D791A500E4C06B /* AppDelegate.swift */; };
-		A4B5FDCB27D791A500E4C06B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDCA27D791A500E4C06B /* ViewController.swift */; };
+		A4B5FDCB27D791A500E4C06B /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDCA27D791A500E4C06B /* InputView.swift */; };
 		A4B5FDD027D791A700E4C06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B5FDCF27D791A700E4C06B /* Assets.xcassets */; };
 		A4B5FDD327D791A700E4C06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B5FDD127D791A700E4C06B /* LaunchScreen.storyboard */; };
+		A4B5FDE527D7945F00E4C06B /* ApplicationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDE427D7945F00E4C06B /* ApplicationBuilder.swift */; };
+		A4B5FDE727D794B400E4C06B /* InputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDE627D794B400E4C06B /* InputPresenter.swift */; };
+		A4B5FDE927D7951600E4C06B /* InputBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDE827D7951600E4C06B /* InputBuilder.swift */; };
+		A4B5FDEB27D7951A00E4C06B /* InputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5FDEA27D7951A00E4C06B /* InputRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4B5FDC327D791A500E4C06B /* WaterJug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterJug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B5FDC627D791A500E4C06B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4B5FDCA27D791A500E4C06B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4B5FDCA27D791A500E4C06B /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A4B5FDCF27D791A700E4C06B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B5FDD227D791A700E4C06B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4B5FDD427D791A700E4C06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B5FDE427D7945F00E4C06B /* ApplicationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBuilder.swift; sourceTree = "<group>"; };
+		A4B5FDE627D794B400E4C06B /* InputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPresenter.swift; sourceTree = "<group>"; };
+		A4B5FDE827D7951600E4C06B /* InputBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBuilder.swift; sourceTree = "<group>"; };
+		A4B5FDEA27D7951A00E4C06B /* InputRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B5FDC627D791A500E4C06B /* AppDelegate.swift */,
+				A4B5FDE427D7945F00E4C06B /* ApplicationBuilder.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -81,7 +90,10 @@
 		A4B5FDDC27D7922100E4C06B /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				A4B5FDCA27D791A500E4C06B /* ViewController.swift */,
+				A4B5FDCA27D791A500E4C06B /* InputView.swift */,
+				A4B5FDE827D7951600E4C06B /* InputBuilder.swift */,
+				A4B5FDEA27D7951A00E4C06B /* InputRouter.swift */,
+				A4B5FDE627D794B400E4C06B /* InputPresenter.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -163,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B5FDCB27D791A500E4C06B /* ViewController.swift in Sources */,
+				A4B5FDCB27D791A500E4C06B /* InputView.swift in Sources */,
 				A4B5FDC727D791A500E4C06B /* AppDelegate.swift in Sources */,
+				A4B5FDEB27D7951A00E4C06B /* InputRouter.swift in Sources */,
+				A4B5FDE927D7951600E4C06B /* InputBuilder.swift in Sources */,
+				A4B5FDE527D7945F00E4C06B /* ApplicationBuilder.swift in Sources */,
+				A4B5FDE727D794B400E4C06B /* InputPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WaterJug/Info.plist;
+				INFOPLIST_FILE = WaterJug/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -336,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WaterJug/Info.plist;
+				INFOPLIST_FILE = WaterJug/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
